@@ -142,7 +142,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="contact-from">
-						<form  action="zero.php" method="post" id="contact-form">
+						<form  action="index.html" method="get" id="contact-form">
 							<div class="messages"></div>
 							<div class="controls">
 								<div class="row">
@@ -178,38 +178,124 @@
 									</div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<div class="input-group form-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select class="form-select form-control" aria-label="Default select example" name="University" >
-											<option selected>Choose University</option>
-											<option value="Modern Academy">Modern Academy</option>
-											<option value="Other">Other</option>
-										</select>
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input type="number" data-error=" Your ID is required." required="required" placeholder=" Your ID" class="form-control" name="ID" id="form_ID_Number">
 										<div class="help-block with-errors"></div>
+										</div>
 									</div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="input-group form-group">
+										<span class="input-group-addon" ><i class="glyphicon glyphicon-list"></i></span>
+										<select class="form-select form-control" aria-label="Default select example" name="Major" required>
+											<option selected>Choose Major</option>
+											<option value="Modern Academy">Modern Academy</option>
+											<option value="Business">Business</option>
+											<option value="Engineer">Engineer</option>
+										</select>
+										<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="input-group form-group">
+										<span class="input-group-addon" ><i class="glyphicon glyphicon-list"></i></span>
+										<select class="form-select form-control" aria-label="Default select example" name="Academic_Year" required>
+											<option selected>Academic Year</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="3">4</option>
+											<option value="3">5</option>
+										</select>
+										<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="input-group form-group">
+										<span class="input-group-addon" ><i class="glyphicon glyphicon-list"></i></span>
+										<select class="form-select form-control" aria-label="Default select example" name="Prefer_Section" required>
+											<option disabled selected>Choose your prefer section</option>
+											<option value="Digital Marketing Committee">Digital Marketing Committee</option>
+											<option value="External Relation (ER)">External Relation (ER)</option>
+											<option value="Fundraising (FR)">Fundraising (FR)</option>
+											<option value="Operations & Logistics (OP)">Operations & Logistics (OP)</option>
+											<option value="Human Resources ( HR )">Human Resources ( HR )</option>
+											<option value="Presentation ( PRE )">Presentation ( PRE )</option>
+											<option value="Project Management (PM)">Project Management (PM)</option>
+											<option value="Research & Development (R&D) ">Research & Development (R&D) </option>
+											<option value="Tech">Tech</option>
+											<option value="Videography">Videography</option>
+										</select>
+										<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="input-group form-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+											<textarea data-error="Please,leave us a what did you know about enactus?." required="required" rows="2" placeholder="What did you know about enactus?" class="form-control" name="about-enactus" id="form_about"></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="input-group form-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+											<textarea data-error="Please,leave us a Why do you want to join your choose committee?" required="required" rows="2" placeholder="Why do you want to join your choose committee?" class="form-control" name="choose-committee" id="chose_commitee"></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<label for="range1" class="form-label">You usually stay calm, even under a lot of pressure?</label>
+										<input type="range" class="form-range" min="1" max="5" step="1" id="range1" name="range-pressure" required>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<label for="range2" class="form-label">Asocial events , you rarely try to introduce yourself to new people ad mostly talk to the ones you already know?</label>
+										<input type="range" class="form-range" min="1" max="5" step="1" id="range2" name="range-people" required>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<label for="range3" class="form-label">You like to use organizing tools like schedules and lists?</label>
+										<input type="range" class="form-range" min="1" max="5" step="1" id="range3" name="range-used" required>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<label for="range4" class="form-label">Your happiness comes more from helping others accomplish things than your own accomplishments?</label>
+										<input type="range" class="form-range" min="1" max="5" step="1" id="range4" name="range-help" required>
+									</div>
+									<br>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<p>Your mood can change very quickly?</p>
 										<div class="form-group">
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="Major" value="COMPUTER SCIENCE" id="flexRadioDefault1" class="form-control" required>
-												<label class="form-check-label" for="flexRadioDefault1">
-													COMPUTER SCIENCE
+												<input class="form-check-input" type="radio" name="mood" value="Disagree" id="radio1" class="form-control" required>
+												<label class="form-check-label" for="radio1">
+													Disagree
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="Major" value="BUSSINESS INFORMATION SYSTEMS" id="flexRadioDefault2" class="form-control" required>
-												<label class="form-check-label" for="flexRadioDefault2">
-													BUSSINESS INFORMATION SYSTEMS
+												<input class="form-check-input" type="radio" name="mood" value="Agree" id="radio2" class="form-control" required>
+												<label class="form-check-label" for="radio2">
+													Agree
+												</label>
+											</div>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<p>Where did you know us?</p>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="know-us?" value="Our Facebook page" id="radio3" class="form-control" required>
+												<label class="form-check-label" for="radio3">
+													Our Facebook page
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="Major" value="MANAGEMENT" id="flexRadioDefault3" class="form-control" required>
-												<label class="form-check-label" for="flexRadioDefault3">
-													MANAGEMENT
+												<input class="form-check-input" type="radio" name="know-us?" value="Ushering on campus" id="radio4" class="form-control" required>
+												<label class="form-check-label" for="radio4">
+													Ushering on campus
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="Major" value="ENGINEERING" id="flexRadioDefault4" class="form-control" required>
-												<label class="form-check-label" for="flexRadioDefault4">
-													ENGINEERING
+												<input class="form-check-input" type="radio" name="know-us?" value="Modern academy page" id="radio5" class="form-control" required>
+												<label class="form-check-label" for="radio5">
+													Modern academy page
 												</label>
 											</div>
 											<div class="help-block with-errors"></div>
@@ -221,21 +307,12 @@
 											<br/>
 											<input id="Date of birth" type="date" value="" name="Date_of_birth" required>
 										<div class="help-block with-errors"></div>
-									</div>
-
-									</div>
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<div class="input-group form-group">
-											<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-											<textarea data-error="Please,leave us a informations." required="required" rows="4" placeholder="Tell us about your experiences" class="form-control" name="Info_exp" id="form_message"></textarea>
-											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-md-12  col-sm-12 col-xs-12">
 										<input type="submit" value="Send" class="btn btn-success btn-send disabled">
 									</div>
 								</div>
-
 							</div>
 						</form>
 					</div>
@@ -250,16 +327,14 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<p>
-							&copy; copyright.designed and developed by <br><a href="https://www.facebook.com/eslamkamal11">Eng/Eslam Kamal</a> & <a href="https://www.facebook.com/ziead.hossam.9/">Eng/Zeyad Hossam</a>
+							&copy; copyright.designed and developed by <br>Tech Committee</a>
 						</p><!--/p-->
 					</div>
 					<div class="col-sm-6">
 						<div class="footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-pinterest-p"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
+							<a href="https://www.facebook.com/EnactusMAM?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+							<a href="https://instagram.com/enactus_ma?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/company/enactus-modern-academy/"><i class="fa fa-linkedin"></i></a>
 						</div>
 					</div>
 				</div>
